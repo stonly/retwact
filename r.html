@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Retwact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="/css/flat-ui.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <style type="text/css">
+    // http://sitefromscratch.com/making-your-gravataravatar-round/
+    .avatar{
+     -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    border-radius: 200px;
+    }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="" style="height:100%;padding-bottom:100px" >
+
+<div class="" style=" height: 300px; ">
+            <div class="demo-browser-side" style="width:211px;">
+              <div class="demo-browser-author"></div>
+              <div class="demo-browser-action">
+                <a href="http://twitter.com/home/?status=RT {{.Rmessage}}" class="btn btn-danger btn-large btn-block">
+                  Retweet retraction
+                </a>
+              </div>
+              <h5>Retwact is an app that helps you correct your retweeted messages. <br >Create a new Retwaction <a href="/">here</a>. <br> Don't follow us at <a href="http://twitter.com/retwact">@retwact</a>, we will be sending lots of tweets.</h5>
+
+
+              <a class="twitter-timeline" data-dnt="true" href="https://twitter.              com/BestofRetwact" data-widget-id="330976393133441025">Tweets by              @BestofRetwact</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/             ^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.c            reateElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";             fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");            </script>
+
+
+            </div>
+            <div style="background-color:white;" class="demo-browser-content ng-binding">
+              <br><br>
+              <h3> Please retweet this retraction to stop the flow of misinformation </h3>
+              <br>
+              <label>Created by :</label>
+              <h4>@{{.Uid}} <small>{{.Date}}</small></h4>
+                            <br>
+              <label>Original tweet :</label>
+              <h4>{{.OrigMessage}}</h4>
+                            <br>
+              <label>New tweet :</label>
+              <h4>{{.Rmessage}}</h4>
+            </div>
+          </div>
+
+
+      </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <br>Created by <a href="http://twitter.com/stonlybaptiste" target="_blank">@StonlyBaptiste</a> with love.
+          <br>Credits, github links, and other acknowledgements coming soon.
+          <br>
+        </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Load JS here for greater good =============================-->
+    <script src="/js/jquery-1.8.2.min.js"></script>
+    <script src="/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script src="/js/jquery.dropkick-1.0.0.js"></script>
+    <script src="/js/custom_checkbox_and_radio.js"></script>
+    <script src="/js/custom_radio.js"></script>
+    <script src="/js/jquery.tagsinput.js"></script>
+    <script src="/js/bootstrap-tooltip.js"></script>
+    <script src="/js/jquery.placeholder.js"></script>
+    <script src="http://vjs.zencdn.net/c/video.js"></script>
+    <script src="/js/application.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40525034-1', 'rtrt.co');
+  ga('send', 'pageview');
+
+</script>
+
+    <!--[if lt IE 8]>
+      <script src="js/icon-font-ie7.js"></script>
+      <script src="js/icon-font-ie7-24.js"></script>
+    <![endif]-->
+  </body>
+</html>
